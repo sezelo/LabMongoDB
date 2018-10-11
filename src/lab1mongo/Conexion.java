@@ -143,6 +143,7 @@ public class Conexion {
         String cursorResultado = "";
         while (cursor.hasNext()){
             cursorResultado += (cursor.next().toString() + "\n" + "\n");
+            System.out.println(cursorResultado);
         } 
         return cursorResultado;
     }
