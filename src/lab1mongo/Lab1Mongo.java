@@ -14,8 +14,8 @@ public class Lab1Mongo {
 
     public static void main(String[] args) throws Exception{
         
-        Interfaz_Principal n = new Interfaz_Principal();
-        n.setVisible(true);
+        //Interfaz_Principal n = new Interfaz_Principal();
+        //n.setVisible(true);
         Conexion conexion = new Conexion();
                         
         //conexion.readProductora();
@@ -31,10 +31,10 @@ public class Lab1Mongo {
         /*conexion.consultaPorTituloPelicula("Maikol Jordan 3");
         System.out.println();
         conexion.consultaPorFranquicia("Maikol Jordan Soto");
+        System.out.println();*/
+        conexion.consultaPorRangoAño(2010, 2020);
         System.out.println();
-        conexion.consultaPorRangoAño(2004, 2016);
-        System.out.println();
-        conexion.consultasProductora1("La 1/2");
+        /*conexion.consultasProductora1("La 1/2");
         System.out.println();
         conexion.cantidadPeliculas("La 1/2");
         System.out.println();
