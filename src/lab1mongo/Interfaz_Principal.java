@@ -114,6 +114,7 @@ public class Interfaz_Principal extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        btnBackCRUD2 = new javax.swing.JButton();
         CRUDProductora = new javax.swing.JFrame();
         btnCreateProd = new javax.swing.JButton();
         btnReadProd = new javax.swing.JButton();
@@ -609,6 +610,13 @@ public class Interfaz_Principal extends javax.swing.JFrame {
 
         jLabel25.setText("Actor 3");
 
+        btnBackCRUD2.setText("Back");
+        btnBackCRUD2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackCRUD2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CRUDPeliculaLayout = new javax.swing.GroupLayout(CRUDPelicula.getContentPane());
         CRUDPelicula.getContentPane().setLayout(CRUDPeliculaLayout);
         CRUDPeliculaLayout.setHorizontalGroup(
@@ -665,7 +673,9 @@ public class Interfaz_Principal extends javax.swing.JFrame {
                             .addComponent(txtActor1)
                             .addComponent(txtActor2)
                             .addComponent(txtActor3))))
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addComponent(btnBackCRUD2)
+                .addGap(24, 24, 24))
         );
         CRUDPeliculaLayout.setVerticalGroup(
             CRUDPeliculaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -673,7 +683,8 @@ public class Interfaz_Principal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(CRUDPeliculaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtIDPeli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
+                    .addComponent(jLabel14)
+                    .addComponent(btnBackCRUD2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(CRUDPeliculaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombrePeli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -718,7 +729,7 @@ public class Interfaz_Principal extends javax.swing.JFrame {
                 .addGroup(CRUDPeliculaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtActor3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addGroup(CRUDPeliculaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCreatePeli)
                     .addComponent(btnReadPeli)
@@ -914,6 +925,7 @@ public class Interfaz_Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_consProd2ActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        
         //Interfaz_Principal.setVisible(true);
         //Interfaz_Consulta.hide();
     }//GEN-LAST:event_btnBackActionPerformed
@@ -1061,6 +1073,11 @@ public class Interfaz_Principal extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(frame,"Pelicula eliminada con exito");
     }//GEN-LAST:event_btnDeletePeliActionPerformed
 
+    private void btnBackCRUD2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackCRUD2ActionPerformed
+        InterfazCRUD.setVisible(true);
+        CRUDPelicula.hide();
+    }//GEN-LAST:event_btnBackCRUD2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1113,6 +1130,7 @@ public class Interfaz_Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnBack4;
     private javax.swing.JButton btnBack5;
     private javax.swing.JButton btnBackCRUD;
+    private javax.swing.JButton btnBackCRUD2;
     private javax.swing.JButton btnCRUD;
     private javax.swing.JButton btnConsulta;
     private javax.swing.JButton btnConsulta1;

@@ -714,7 +714,9 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="131" max="32767" attributes="0"/>
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
+                  <Component id="btnBackCRUD2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -725,6 +727,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtIDPeli" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnBackCRUD2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -781,7 +784,7 @@
                       <Component id="txtActor3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="34" max="32767" attributes="0"/>
+                  <EmptySpace pref="31" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnCreatePeli" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnReadPeli" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -922,6 +925,14 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Actor 3"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnBackCRUD2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Back"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackCRUD2ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
